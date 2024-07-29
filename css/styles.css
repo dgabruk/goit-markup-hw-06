@@ -1136,7 +1136,36 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+  (min-resolution: 192dpi),
+  (min-width: 320px) {
+  .hero-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mob@2x.jpg);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi),
+  (min-width: 768px) {
+  .hero-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab@2x.jpg);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi),
+  (min-width: 1158px) {
   .hero-container {
     background-image: linear-gradient(
         to bottom,
