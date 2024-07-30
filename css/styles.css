@@ -37,6 +37,7 @@ img {
 .container {
   max-width: 320px;
   padding: 0 16px;
+  margin: 0 auto;
 }
 
 .nav-container {
@@ -166,6 +167,7 @@ img {
   background-position: center center;
   background-size: cover;
   max-width: 320px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -950,7 +952,6 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-tab.jpg);
-    margin: 0;
   }
 
   .hero-title {
