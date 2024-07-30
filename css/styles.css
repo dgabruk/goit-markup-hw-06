@@ -36,7 +36,6 @@ img {
 
 .container {
   max-width: 320px;
-  margin: 0 auto;
   padding: 0 16px;
 }
 
@@ -64,7 +63,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .web {
@@ -166,7 +166,6 @@ img {
   background-position: center center;
   background-size: cover;
   max-width: 320px;
-  margin: 0 auto;
 }
 
 .hero-title {
@@ -190,7 +189,7 @@ img {
   cursor: pointer;
   font-weight: 500;
   display: block;
-  min-width: 196px;
+  width: 196px;
   margin: 0 auto;
   height: 56px;
   border: none;
@@ -346,7 +345,7 @@ img {
 
 .portfolio-list-item {
   width: 288px;
-  height: 400px;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -413,6 +412,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 72px;
+  gap: 16px;
 }
 
 .studio {
@@ -428,7 +429,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 16px;
 }
 
 .footer-web {
@@ -442,8 +442,11 @@ img {
   letter-spacing: 0.02em;
   background-color: #2e2f42;
   width: 288px;
-  margin-bottom: 72px;
   text-align: center;
+}
+
+.footer-social {
+  margin-bottom: 72px;
 }
 
 .footer-social-text {
@@ -469,7 +472,6 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-bottom: 72px;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -500,6 +502,8 @@ img {
   margin-bottom: 16px;
   font-weight: 500;
   line-height: 1.5;
+  min-width: 75px;
+  text-align: center;
 }
 
 .subscribe-form {
@@ -672,7 +676,6 @@ img {
   border-radius: 4px;
   width: 100%;
   height: 40px;
-  margin-top: 4px;
   background-color: transparent;
   padding: 8px 16px;
   padding-left: 38px;
@@ -826,8 +829,12 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 24px 40px;
+  padding: 24px 24px 40px 16px;
   overflow: auto;
+}
+
+.mobile-menu-bottom {
+  width: 100%;
 }
 
 .mobile-menu.is-open {
@@ -894,7 +901,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 40px;
-  height: 40px;
 }
 
 @media (min-width: 768px) {
@@ -909,7 +915,8 @@ img {
   .logo {
     margin-right: 120px;
     display: block;
-    padding: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .contacts {
@@ -919,6 +926,7 @@ img {
   .contacts-list {
     flex-direction: column;
     gap: 12px;
+    margin-left: auto;
   }
 
   .contacts-list-item {
@@ -942,6 +950,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-tab.jpg);
+    margin: 0;
   }
 
   .hero-title {
@@ -981,20 +990,24 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 72px 24px;
-    max-width: 552px;
-    margin: 0 auto;
+    max-width: 768px;
   }
 
   .footer-info {
     align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
   }
 
   .footer-text {
     width: 264px;
     text-align: left;
+    margin-bottom: 0;
   }
 
   .subscribe-form {
@@ -1012,6 +1025,10 @@ img {
     min-height: 584px;
   }
 
+  .modal-label {
+    margin-bottom: 8px;
+  }
+
   .privacy-link {
     margin-left: 5px;
   }
@@ -1025,6 +1042,7 @@ img {
 
   .contacts-list {
     flex-direction: row;
+    gap: 40px;
   }
 
   .contacts-list-item {
@@ -1104,6 +1122,8 @@ img {
 
   .footer-container {
     display: flex;
+    margin: 0;
+    gap: 0;
   }
 
   .footer-info {
@@ -1122,7 +1142,7 @@ img {
 
   .footer-subscribe {
     display: flex;
-    margin-left: auto;
+    margin-left: 80px;
   }
 
   .subscribe-form {
